@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="appjs/css/base.css">
 		<link rel="stylesheet" href="appjs/css/app.css">
 		<link rel="stylesheet" href="fas/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="material_design.css"/>
 		<title>
 			Desk
 		</title>
@@ -211,7 +212,7 @@
 					<div class="content"></div>
 				</div>
 
-				<div class="app-section">
+				<div class="app-section information message">
 					<center>
 						这篇百科属于 <b><label class="cate"></label></b> 范畴
 						<br/>
@@ -284,13 +285,17 @@
 				</div>
 			</div>
 			<div class="app-content">
-				<div class="app-section">
-					<input class="app-input" id="login_username" type="text" placeholder="用户名"
-					/>
+				<div class="group">
+					<input class="app-input" id="login_username" type="text" required/>
+					<span class="highlight"></span>
+      					<span class="bar"></span>
+      					<label>用户名</label>
 				</div>
-				<div class="app-section">
-					<input class="app-input" id="login_password" type="password" placeholder="密码"
-					/>
+				<div class="group">
+					<input class="app-input" id="login_password" type="password" required/>
+      					<span class="highlight"></span>
+      					<span class="bar"></span>
+      					<label>密码</label>
 				</div>
 				<div class="app-section">
 					<div class="app-button" id="login_btnLogin">
@@ -371,4 +376,5 @@
 	<script src="model/controller.search.js"></script>
 	<script src="model/controller.home.js"></script>
 	<script src="model/init.js"></script>
+	<script src="material_design.js" type="text/javascript" charset="utf-8"></script>
 </html>
