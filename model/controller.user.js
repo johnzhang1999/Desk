@@ -1,6 +1,6 @@
 App.controller('login',
 		function(page) {
-			$(page).find('.app-button').on('click',
+			$(page).find('a').on('click',
 			function() {
 				if (this.id == "login_btnLogin") {
 					var w = plus.nativeUI.showWaiting("正在验证, 请稍后...");

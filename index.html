@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="appjs/css/base.css">
 		<link rel="stylesheet" href="appjs/css/app.css">
 		<link rel="stylesheet" href="fas/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<title>
 			Desk
 		</title>
@@ -45,7 +47,7 @@
 			</div>
 		</div>
 		
-		
+	
 		
 		<div class="app-page" data-page="index">
 			<div class="app-topbar">
@@ -57,20 +59,29 @@
 				</div>
 			</div>
 			<div class="app-content">
-				<div class="app-section">
-					<img src="res/logo.png" style="width:100%;"/>
-				</div>
-				<div class="app-section">
-				<center>课桌是一个专门为青少年以及学生党打造的在线百科平台, 在这里, 没有严肃的权威论证, 也不需要僵化的点评分析, 每个人都只做自己, 写自己和同学的故事, 发自己的创作, 发现学生党们独特的才华.</center>
-				</div>
-				<div class="app-section">
-					<div class="app-button" data-target="login">
-						<i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;登陆课桌
-					</div>
-					<div class="app-button" data-target="reg">
-						<i class="fa fa-plus-square fa-lg"></i>&nbsp;&nbsp;注册账号
-					</div>
-				</div>
+				<div class="row">
+        <div class="col s12 m7">
+          <br>
+          <div class="card">
+            <div class="card-image">
+              <img src="res/logo.png" style="width:100%;">
+              <!--<span class="card-title">欢迎来到课桌</span>-->
+            </div>
+            <div class="card-content">
+              <p>课桌是一个专门为青少年以及学生党打造的在线百科平台, 在这里, 没有严肃的权威论证, 也不需要僵化的点评分析, 每个人都只做自己, 写自己和同学的故事, 发自己的创作, 发现学生党们独特的才华.</p>
+            </div>
+            <div class="card-action">
+             	<a class="btn waves-effect waves-light blue white-text" data-target="login">
+					<i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;登陆课桌
+				</a>
+				<a class="btn waves-effect waves-light blue white-text" data-target="reg">
+					<i class="fa fa-plus-square fa-lg"></i>&nbsp;&nbsp;注册账号
+				</a>
+            </div>
+          </div>
+        </div>
+      </div>
+				
 					<center>
 						<i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
 					</center>
@@ -283,25 +294,36 @@
 					登陆到课桌
 				</div>
 			</div>
-			<div class="app-content">
-				<div class="app-section">
-					<input class="app-input" id="login_username" type="text" placeholder="用户名"
-					/>
-				</div>
-				<div class="app-section">
-					<input class="app-input" id="login_password" type="password" placeholder="密码"
-					/>
-				</div>
-				<div class="app-section">
-					<div class="app-button" id="login_btnLogin">
-						<i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;登陆
+			<div class="app-content"><br><br><br>
+				<div class="card">
+					<div class="card-content">
+						<div class="row">
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="login_username" type="text" >
+								<label for="login_username">用户名</label>
+							</div>
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="login_password" type="password">
+								<label for="login_password">密码</label>
+							</div>
+							</div>
+						</div>
+					<div class="card-action">
+						<br>
+						<center>
+							<a class="btn waves-effect waves-light blue white-text" id="login_btnLogin">
+								登陆&nbsp;&nbsp; <i class="mdi-content-send right"></i>
+							</a>
+						</center>
 					</div>
 				</div>
-					<center>
-						<i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
-					</center>
+				<center>
+					<br><i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
+				</center>
 			</div>
 		</div>
+					
+			
 		
 		
 		<div class="app-page" data-page="reg">
@@ -343,6 +365,8 @@
 	
 	
 	</body>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="materialize/js/materialize.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="appjs/js/zepto.js"></script>
 	<script src="appjs/js/lib/clickable.js"></script>
 	<script src="appjs/js/lib/scrollable.js"></script>
