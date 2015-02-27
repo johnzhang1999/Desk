@@ -37,7 +37,7 @@ App.controller('login',
 
 App.controller('reg',
 		function(page) {
-			$(page).find('.app-button').on('click',
+			$(page).find('a').on('click',
 			function() {
 				if (this.id == "reg_btnReg") {
 					var username = encodeURIComponent($("#reg_username").attr("value"));

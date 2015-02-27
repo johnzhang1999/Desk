@@ -50,31 +50,26 @@
 	
 		
 		<div class="app-page" data-page="index">
-			<div class="app-topbar">
-				<div class="app-title">
-					欢迎来到课桌
-				</div>
-				<div class="app-button right" data-target="about">
-					&nbsp;<i class="fa fa-info fa-lg"></i>&nbsp;
-				</div>
-			</div>
+			
 			<div class="app-content">
+				<br>
 				<div class="row">
         <div class="col s12 m7">
           <br>
           <div class="card">
             <div class="card-image">
               <img src="res/logo.png" style="width:100%;">
-              <!--<span class="card-title">欢迎来到课桌</span>-->
+              <span class="card-title">欢迎来到课桌</span>
             </div>
             <div class="card-content">
-              <p>课桌是一个专门为青少年以及学生党打造的在线百科平台, 在这里, 没有严肃的权威论证, 也不需要僵化的点评分析, 每个人都只做自己, 写自己和同学的故事, 发自己的创作, 发现学生党们独特的才华.</p>
+            	
+              <p style="font-size:1.1em">课桌是一个专门为青少年以及学生党打造的在线百科平台, 在这里, 没有严肃的权威论证, 也不需要僵化的点评分析, 每个人都只做自己, 写自己和同学的故事, 发自己的创作, 发现学生党们独特的才华.</p>
             </div>
             <div class="card-action">
-             	<a class="btn waves-effect waves-light blue white-text" data-target="login">
+             	<a class="btn waves-effect waves-light blue white-text app-button" data-target="login">
 					<i class="fa fa-globe fa-lg"></i>&nbsp;&nbsp;登陆课桌
 				</a>
-				<a class="btn waves-effect waves-light blue white-text" data-target="reg">
+				<a class="btn waves-effect waves-light blue white-text app-button" style="float:right" data-target="reg">
 					<i class="fa fa-plus-square fa-lg"></i>&nbsp;&nbsp;注册账号
 				</a>
             </div>
@@ -84,7 +79,7 @@
 				
 					<center>
 						<i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
-					</center>
+					</center> <!--<a class="btn-floating btn-large waves-effect waves-light red app-button" style="float:right" data-target="about"><i class="mdi-content-add"></i></a>-->
 			</div>
 		</div>
 		
@@ -99,15 +94,22 @@
 				</div>
 			</div>
 			<div class="app-content">
-				<div class="app-section">
-					<img src="res/team.png" style="width:100%;"/>
-				</div>
-				<div class="app-section">
-				<center>我们不是商业的精英, 我们也不是IT的领跑者, 我们是 Idea Leaper, 一个完全由学生党组成的科技团队. 今天的课桌, 就是我们献上的第一份礼物, 请慢慢享用.</center>
-				</div>
-				<div class="app-section">
-					<center>目前暂不招收新成员, 请耐心等待.</center>
-				</div>
+				<div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="res/team.png" style="width:100%;">
+            </div>
+            <div class="card-content">
+              <p>我们不是商业的精英, 我们也不是IT的领跑者, 我们是 Idea Leaper, 一个完全由学生党组成的科技团队. 今天的课桌, 就是我们献上的第一份礼物, 请慢慢享用.</p>
+            </div>
+            <div class="card-action">
+              <center>目前暂不招收新成员, 请耐心等待.</center>
+            </div>
+          </div>
+        </div>
+      </div>
+				
 					<center>
 						<i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
 					</center>
@@ -286,17 +288,16 @@
 		
 		
 		<div class="app-page" data-page="login">
-			<div class="app-topbar">
-				<div class="app-button left" data-back>
-					返回
-				</div>
-				<div class="app-title">
-					登陆到课桌
-				</div>
-			</div>
-			<div class="app-content"><br><br><br>
+			
+			<div class="app-content container">
+	
+    <br><br><br>
 				<div class="card">
+					 <div class="col s12 blue">
+					 	<span class="card-title"><center>登陆到课桌</span></center>
+					 </div>
 					<div class="card-content">
+						
 						<div class="row">
 							<div class="input-field col s10 offset-s1">
 								<input class="app-input validate" id="login_username" type="text" >
@@ -317,9 +318,8 @@
 						</center>
 					</div>
 				</div>
-				<center>
-					<br><i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
-				</center>
+				
+			
 			</div>
 		</div>
 					
@@ -327,39 +327,44 @@
 		
 		
 		<div class="app-page" data-page="reg">
-			<div class="app-topbar">
-				<div class="app-button left" data-back>
-					返回
-				</div>
-				<div class="app-title">
-					注册课桌账号
-				</div>
-			</div>
-			<div class="app-content">
-				<div class="app-section">
-					<input class="app-input" id="reg_username" type="text" placeholder="用户名"
-					/>
-				</div>
-				<div class="app-section">
-					<input class="app-input" id="reg_email" type="text" placeholder="邮件地址"
-					/>
-				</div>
-				<div class="app-section">
-					<input class="app-input" id="reg_pw" type="password" placeholder="密码"
-					/>
-				</div>
-				<div class="app-section">
-					<input class="app-input" id="reg_pw2" type="password" placeholder="重复密码"
-					/>
-				</div>
-				<div class="app-section">
-					<div class="app-button" id="reg_btnReg">
-						<i class="fa fa-plus-square fa-lg"></i>&nbsp;&nbsp;立即注册
+			
+			<div class="app-content container">
+				<br>
+				<div class="card">
+					<div class="col s12 blue">
+					 	<span class="card-title"><center>在课桌上注册</span></center>
+					 </div>
+					<div class="card-content">
+						<div class="row">
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="reg_username" type="text" >
+								<label for="login_username">用户名</label>
+							</div>
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="reg_email" type="text">
+								<label for="login_password">E-mail</label>
+							</div>
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="reg_pw" type="password">
+								<label for="login_password">密码</label>
+							</div>
+							<div class="input-field col s10 offset-s1">
+								<input class="app-input validate" id="reg_pw2" type="password">
+								<label for="login_password">重复密码</label>
+							</div>
+							</div>
+						</div>
+					<div class="card-action">
+						<br>
+						<center>
+							<a class="btn waves-effect waves-light blue white-text" id="reg_btnReg">
+								立即注册&nbsp;&nbsp; <i class="mdi-content-send right"></i>
+							</a>
+						</center>
 					</div>
 				</div>
-					<center>
-						<i class="fa fa-cloud"></i>&nbsp;&nbsp;Idea Leaper Technology
-					</center>
+					
+				
 			</div>
 		</div>
 	
